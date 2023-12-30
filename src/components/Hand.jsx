@@ -1,9 +1,12 @@
+import rockImage from "../../images/icon-rock.svg"
+import paperImage from "../../images/icon-paper.svg"
+import scissorsImage from "../../images/icon-scissors.svg"
 import "./Hand.css"
 
 const images = {
-  rock: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-rock.svg",
-  paper: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-paper.svg",
-  scissors: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-scissors.svg"
+  rock: rockImage,
+  paper: paperImage,
+  scissors: scissorsImage
 }
 
 export default function Hand({ type, setSelection }) {

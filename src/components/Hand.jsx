@@ -1,9 +1,9 @@
 import "./Hand.css"
 
 const images = {
-  rock: "../../images/icon-rock.svg",
-  paper: "../../images/icon-paper.svg",
-  scissors: "../../images/icon-scissors.svg"
+  rock: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-rock.svg",
+  paper: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-paper.svg",
+  scissors: "https://github.com/GaelSM/Rock-Paper-Scissors/tree/main/images/icon-scissors.svg"
 }
 
 export default function Hand({ type, setSelection }) {

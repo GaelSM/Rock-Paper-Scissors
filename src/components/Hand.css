@@ -1,0 +1,63 @@
+.hand {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(100%);
+  transition: transform .3s ease;
+
+  &:hover {
+    transition: transform .3s ease;
+    transform: scale(90%);
+  }
+}
+
+.hand.rock {
+  z-index: 0;
+  background: var(--Rock-Gradient);
+  box-shadow: 0 10px 0 #931C3A;
+}
+
+.hand.paper {
+  z-index: 0;
+  background: var(--Paper-Gradient);
+  box-shadow: 0 10px 0 #2743C1;
+}
+
+.hand.scissors {
+  z-index: 0;
+  background: var(--Scissors-Gradient);
+  box-shadow: 0 10px 0 #C66B18;
+}
+
+.hand .between {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: var(--White);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand .between img {
+  width: 40%;
+}
+
+@media (max-width: 500px) {
+  .hand {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .hand .between {
+    width: 100px;
+    height: 100px;
+  }
+}

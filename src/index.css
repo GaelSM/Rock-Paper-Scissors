@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+  --Scissors-Gradient: linear-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+  --Paper-Gradient: linear-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+  --Rock-Gradient: linear-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+  --Lizard-Gradient: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  --Cyan: linear-gradient(hsl(189, 59%, 53%) to hsl(189, 58%, 57%));
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+  /* Tipografía */
+  --Principal: 'Barlow Semi Condensed', sans-serif;
+  --Large: 40px;
+  --Medium: 20px;
+  --Normal: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, button {
+  font-family: var(--Principal);
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}

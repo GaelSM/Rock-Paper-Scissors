@@ -1,0 +1,24 @@
+.selection {
+  width: 475px;
+  height: auto;
+  background: url("../../images/bg-triangle.svg") no-repeat center;
+}
+
+.selection .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.selection .bottom {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .selection {
+    width: 310px;
+    height: auto;
+    background-size: 70%;
+  }
+}

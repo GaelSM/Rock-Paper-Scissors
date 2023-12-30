@@ -1,0 +1,98 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 430px;
+}
+
+.game .player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  & .indetification p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--White);
+    letter-spacing: 2px;
+  }
+}
+
+.game .hand {
+  width: 300px;
+  height: 300px;
+  &:hover {
+    transform: none;
+  }
+  cursor: auto;
+}
+
+.game .hand .between {
+  width: 225px;
+  height: 225px;
+}
+
+.game .again {
+  grid-area: again;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  & p {
+    color: var(--White);
+    font-size: 55px;
+    text-align: center;
+  }
+}
+
+.game .again .button-again {
+  width: 220px;
+  height: 50px;
+  background-color: var(--White);
+  border-radius: 10px;
+  font-size: var(--Normal);
+  letter-spacing: 2px;
+  color: var(--Dark-Text);
+  transition: color .5s ease;
+
+  &:hover {
+    transition: color .5s ease;
+    color: hsl(349, 71%, 52%);
+  }
+}
+
+@media (max-width: 500px) {
+  .game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "player player"
+    "again again";
+  }
+
+  .game .again {
+    grid-area: again;
+  }
+
+  .game .hand {
+    width: 130px;
+    height: 130px;
+  }
+
+  .game .hand .between {
+    width: 100px;
+    height: 100px;
+  }
+
+  .game .player {
+    flex-direction: column-reverse;
+
+    & .indetification p {
+      font-size: 14px;
+    }
+  }
+}

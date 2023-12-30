@@ -1,0 +1,90 @@
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: auto;
+  display: none;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+dialog[open] {
+  display: block;
+}
+
+dialog::backdrop {
+  background-color: hsla(0, 0%, 0%, 0.513);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color:  var(--Dark-Text);
+}
+
+dialog .button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rules-button {
+  justify-self: end;
+  width: 125px;
+  height: 40px;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  font-size: var(--Normal);
+  letter-spacing: 2px;
+  border: 2px solid var(--White);
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  html:has(dialog[open])  {
+    overflow-y: hidden;
+  }
+
+  dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  dialog .content {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    & h2 {
+      font-size: 40px;
+    }
+  }
+
+  dialog .button-close {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 30px;
+  }
+
+  dialog::backdrop {
+    background-color: #fff;
+  }
+
+  .rules-button {
+    align-self: center;
+  }
+}
